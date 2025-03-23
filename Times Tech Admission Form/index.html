@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Times Tech Computer Centre - Admission Form</title>
+  <link rel="stylesheet" href="style.css">
+  <form action="submit.php" method="POST">
+  </head>
+  <body>
+
+      <div class="container" >
+        <div class="logo" style= justify-content: center; align-items: center; height: 20px;>
+        <img src="1.png" alt="My Logo" class="logo"></div>
+      <h1>Times Tech Computer Centre</h1>
+   
+
+      <h2>Admission Form</h2>
+      <form action="submit.php" method="POST" enctype="multipart/form-data" onsubmit="return validateCourses();">
+      <label>Student Name:</label>
+      <input type="text" name="first_name" required>
+
+      <label>Father's Name:</label>
+      <input type="text" name="last_name" required>
+
+      <label>Surname:</label>
+      <input type="text" name="surname" required>
+
+      <label>CNIC# Card Number:</label>
+      <input type="text" name="nic" required>
+
+      <label>Passport Size Photo:</label>
+      <input type="file" name="photo" accept="image/*" required>
+
+      <label>SSC-II MARK SHEET PHOTO:</label>
+      <input type="file" name="photo" accept="image/*" required>
+
+      <label>Expression(optional):</label>
+      <input type="text" name="education" required>
+
+      <label>Select Courses (Choose up to 2):</label>
+      <div class="courses">
+        <input type="checkbox" name="courses[]" value="CIT"> CIT
+        <input type="checkbox" name="courses[]" value="DIT"> DIT
+        <input type="checkbox" name="courses[]" value="Graphic Design"> Graphic Design
+        <input type="checkbox" name="courses[]" value="Programming"> Programming
+      </div>
+
+      <button type="submit">Submit Application</button>
+    </form>
+
+   
+      <p>📍 Wadhy Shah Dargah, near Sonny Sweets, Old Movie Market, Kandhkot</p>
+      <p> 📞 0311-7911431 | 📧 yashai4086@gmail.com</p>
+
+
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
